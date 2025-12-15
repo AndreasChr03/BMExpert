@@ -4,7 +4,7 @@
 
 ## Notice 
 
-This project was originally developed and fully functional. However, the current version in this repository may not work as expected, since it is not the complete/original version and some resources (like database or server) aren't the original ones.|
+This project was originally developed and fully functional. However, the current version in this repository may not work as expected, since it isn't the original version and some resources (like database or server) aren't the original ones.|
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 ## Team E
