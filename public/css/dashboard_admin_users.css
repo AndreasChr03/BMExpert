@@ -1,0 +1,175 @@
+.tool-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; /* Adjust as necessary */
+}
+/* Make sure your button class has the appropriate color if not already styled */
+.btn-success {
+  background-color: #28a745; /* Bootstrap default green */
+  border-color: #28a745; /* Bootstrap default green */
+}
+.center-text {
+  text-align: center;
+}
+#toolTable th, #toolTable td {
+    border: 0.5px solid  #086972 !important; /* Blue borders */
+}
+
+#toolTable {
+    border-collapse: collapse;
+}
+
+.table-bordered {
+    border: 2px solid  #086972 !important; /* Ensures the outer border is also blue */
+}
+.dataTables_filter label, .dataTables_length label {
+  font-weight: bold !important;  /* Makes text bold */
+}
+.dataTables_filter input[type="search"]:focus {
+  border: 2px solid #086972; /* Set the border to blue when the input is focused */
+  outline: none; /* Optional: Removes the default focus outline to use only the border styling */
+}
+/* Styles for select and input elements in DataTables */
+.dataTables_length select, .dataTables_filter input {
+  border: 1px solid #054d56; /* Set border color for the select and input elements */
+}
+
+/* Styles for hover effects */
+.dataTables_length select:hover, .dataTables_filter input:hover {
+  box-shadow: 0 0 5px #054d56; /* Add a shadow with the same color on hover */
+}
+
+/* Additional focus style for better accessibility */
+.dataTables_length select:focus, .dataTables_filter input:focus {
+  border: 1px solid #054d56; /* Maintain the same border on focus */
+  box-shadow: 0 0 5px #054d56; /* Add a shadow to indicate focus */
+}
+/*MASSAGES MASSAGES************************************************/
+.is-valid {
+  border-color: #28a745;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+.invalid-feedback {
+    color: #dc3545;
+    display: none; /* Hide by default */
+}
+
+.is-invalid + .invalid-feedback {
+    display: block; /* Show only when the sibling input is invalid */
+}
+/*MASSAGES MASSAGES************************************************/
+select[name="userTable_length"] {
+  border: 2px solid #086972;
+}
+/* Targeting all pagination links */
+#userTable_paginate a, #propertiesTable_paginate a, #buildingTable_paginate a, #billTable_paginate a {
+  color: #086972;
+  font-weight: bold;
+}
+
+/* To ensure visibility, you might also want to change the color on hover */
+#userTable_paginate a:hover, #propertiesTable_paginate a:hover, #buildingTable_paginate a:hover, #billTable_paginate a:hover {
+  color: #054d56;
+  font-weight: bold;
+}
+
+/* Apply bold font style to info elements of each table */
+#userTable_info, #propertiesTable_info, #buildingTable_info, #billTable_info {
+  font-weight: bold;
+}
+
+/* Ensuring the outer border and cell borders of the user, properties, building, and bill tables are consistent */
+#userTable, #userTable th, #userTable td,
+#propertiesTable, #propertiesTable th, #propertiesTable td,
+#buildingTable, #buildingTable th, #buildingTable td,
+#billTable, #billTable th, #billTable td {
+  border: 0.5px solid #054d56 !important; /* Set the border color for table and cells */
+  border-collapse: collapse; /* Ensures borders between cells are merged properly */
+}
+
+.table-bordered {
+  border: 2px solid #054d56 !important; /* Makes the outer border of any table with .table-bordered consistent */
+}
+
+/* Additional settings to ensure styles are consistently applied to form elements and controls */
+.dataTables_filter input[type="search"]:focus, 
+select[name="userTable_length"], select[name="propertiesTable_length"], 
+select[name="buildingTable_length"], select[name="billTable_length"] {
+  border: 0.5px solid #054d56;
+  outline: none;
+}
+
+
+/*.modal-content .form-group label {
+ font-weight: bold; 
+}*/
+
+.table-responsive {
+  padding: 0 15px !important; /* Adds padding to the left and right */
+  margin: auto;    /* Centers the table */
+  max-width: 100%;  /* Limits maximum width and indirectly adds space */
+}
+
+.paginate_button.page-item.active .page-link {
+  background-color: #054d56;  /* Default background color */
+  color: #ffffff !important;
+  border: 1px solid #054d56;  /* Sets the text color to white for better readability */
+}
+
+.paginate_button.page-item.active .page-link:hover {
+  background-color: #379e9c;  /* Lighter shade for background on hover, you can adjust this color as needed */
+  color: #ffffff !important;  /* Sets the text color to white for better readability */
+}
+
+
+
+/* DASHBOARD_ADMIN_PROPERTIES .................................. */
+
+
+#propertiesTable, #propertiesTable th, #propertiesTable td {
+  border: 0.5px solid #054d56; /* Specific color for internal grid lines */
+  border-collapse: collapse;
+}
+
+#propertiesTable {
+  border: 2px solid #054d56; /* Thicker border for the outer edge of the table */
+}
+
+/* Style for the standard view and hover state of the button */
+.btn-outline-info {
+  color: #ffffff !important; /* Set text color to white */
+  background-color: #054d56 !important; /* Set background color */
+  border-color: #054d56 !important; /* Set border color */
+  font-weight: bold !important; /* Make the text bold */
+}
+
+/* Style for the hover and active (clicked) states */
+.btn-outline-info:hover, .btn-outline-info:active {
+  background-color: #379e9c !important; /* Darker shade for hover and active states */
+  border-color: #379e9c !important; /* Border color for hover and active states */
+}
+
+/* Specific targeting for the A/A column header, accounting for sorting classes */
+th.aa-column, th.aa-column.sorting, th.aa-column.sorting_asc, th.aa-column.sorting_desc {
+  text-align: center;  /* Ensures text is centered horizontally */
+  vertical-align: middle; /* Ensures text is centered vertically */
+  width: 10px; /* Adjust this value based on your table design needs */
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden; /* Hides overflow text */
+  text-overflow: ellipsis; /* Shows an ellipsis if text overflows */
+}
+#billTable th:nth-child(2),
+#billTable th:nth-child(6),
+#billTable th:nth-child(7),
+#billTable th:nth-child(8),
+#billTable td:nth-child(2),
+#billTable td:nth-child(6),
+#billTable td:nth-child(7),
+#billTable td:nth-child(8) {
+    width: 120px !important; /* Adjust the width as needed */
+    text-align: center;
+}

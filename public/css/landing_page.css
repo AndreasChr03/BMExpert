@@ -1,0 +1,211 @@
+/* --- General --- */
+body {
+    font-family:  "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- Header & Navigation --- */
+.header .logo img {
+    max-height: 40px;
+    margin-right: 6px;
+}
+
+.header .logo h1, .footer .footer-logo {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+    color: #086972;
+}
+
+.navbar-nav .nav-link {
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #333;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+    background-color: #086972 !important;
+    color: #ffffff !important;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: 0.3s;
+    line-height: 1;
+}
+
+.btn-primary:hover {
+    background-color: #000000 !important;
+}
+
+/*Main Section*/
+
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+  }
+
+  #myCarousel {
+    max-width: 100%; 
+}
+
+.carousel-item img {
+    width: 100%; 
+    height: auto; 
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+    color: white;
+    padding: 10px;
+}
+
+/* For smaller devices */
+@media (max-width: 767px) {
+
+    .carousel-caption h5,
+    p {
+        font-size: 10px;
+    }
+}
+/*Readed about section*/
+/* -- About Section -- */
+.building_img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .about {
+    position: relative;
+  }
+  .about .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .image_container {
+    position: relative;
+    overflow: hidden;
+  }
+  .container p{
+    margin-bottom: 5px;
+  }
+  .image_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .text-container h2 {
+    margin: 0;
+    font-size: 44px;
+    font-weight: 700;
+  }
+  
+  .text-container p {
+    margin: 5px 0 0 0;
+    font-size: 20px;
+  }
+
+/* Footer */
+.footer {
+    background-color: #f4f4f4;
+    color: #212529;
+    background-color: var(--background-color);
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+
+.footer p 
+{
+    margin-top: 10px;
+}
+.footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.footer .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-links ul a {
+    color: #212529;
+    display: inline-block;
+    line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+    color: #086972;
+}
+
+.footer .footer-address p {
+    margin-bottom: 0px;
+
+}
+/*about about*/
+
+/* style.css */
+.minimal-spacing {
+  margin: 0;
+  padding: 0;
+  line-height: 1;  
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  text-align: center; /* Center text for all child elements */
+  margin: 20px 0; /* Optional: Adds some spacing around the profile */
+}
+.user-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.user-avatar img {
+  max-width: 50%; /* Adjust the image size as needed */
+  height: auto;
+}
+.user-profile h6, .user-profile p {
+  margin-bottom: 5px; /* Reduces spacing, adjust as needed */
+}

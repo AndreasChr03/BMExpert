@@ -1,0 +1,157 @@
+/* Password eye icon */
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 17px; /* Adjust if necessary */
+  cursor: pointer;
+}
+
+/* Specific styles for the submit button */
+.modal-content .login-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #086972;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #086972;
+}
+
+/* Change the hover effect to only apply to the submit button */
+.modal-content .login-form button[type="submit"]:hover {
+  background-color: #086972bb;
+}
+.modal-content {
+  background-color: #b2c6c8ba;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(10 126 137);
+}
+
+/* Form styles within modal */
+.modal-content .login-form h2 {
+  text-align: center;
+}
+
+.modal-content .login-form label:focus {
+  box-shadow: none; /* Removes focus outline */
+}
+
+/* Input label fixed size */
+.modal-content .login-form label {
+  margin-bottom: 0.5rem;
+  color: #086972;
+  font-weight: bold;
+}
+
+.modal-content .login-form label,
+.modal-content .remember-me label {
+  display: block;
+  margin-top: 10px;
+}
+
+.modal-content .login-form input[type="text"],
+.modal-content .login-form input[type="password"],
+.modal-content .remember-me input {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.modal-content .password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.modal-content .password-container input[type="password"] {
+  flex-grow: 1;
+  padding-right: 30px; /* Make space for the eye icon */
+}
+
+.modal-content .password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #086972; 
+}
+/* Container for the checkbox and label */
+.modal-content .remember-me {
+  display: flex;
+  align-items: center; /* Centers items vertically */
+  margin-top: -10px;
+  }
+
+/* Checkbox styling */
+.modal-content .remember-me input[type="checkbox"] {
+  flex: 0 1 ; 
+  margin-right: 10px; /* Space between checkbox and label */
+  margin-top: 5px;
+  accent-color: #086972;
+  transform: scale(1.2); /* Adjust scale value to increase/decrease size */
+  -webkit-transform: scale(1.2); /* For Safari */
+  margin-right: 10px; /* Space between checkbox and label */
+  cursor: pointer;
+ }
+
+/* Label styling */
+.modal-content .remember-me label {
+  flex: 1;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* Styles for the links below the form */
+.modal-content .links {
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.modal-content .links a {
+  color: #086972a4; /* Replace with your desired color code */
+  text-decoration: none; /* Optional: Removes the underline from links */
+  font-weight: bold;
+}
+
+.modal-content .links a:hover {
+  color: #086972;/* Replace with your desired hover color code */
+  text-decoration: underline; /* Optional: Adds an underline on hover */
+}
+
+#loginFormModal input[type="text"]:focus,
+#loginFormModal input[type="password"]:focus {
+  border: 3px solid #086972a7;
+  outline: none; 
+}
+
+/* Responsive width settings for the modal dialog */
+@media (min-width: 992px) {
+  .modal-dialog {
+    max-width: 30%; /* Adjust modal width on large screens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .modal-dialog {
+    max-width: 50%; /* Adjust modal width on medium screens */
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .modal-dialog {
+    max-width: 70%; /* Adjust modal width on small screens */
+  }
+}
+
+@media (max-width: 575px) {
+  .modal-dialog {
+    max-width: 90%; /* Adjust modal width on extra small screens */
+  }
+}
+

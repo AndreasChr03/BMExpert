@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"],
+  .login-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Added to keep the width at 100% including padding */
+  }
+  
+  .password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .password-container input[type="password"] {
+    flex-grow: 1;
+    padding-right: 30px; /* Make space for the icon inside the input */
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 0.5em); /* centers the icon vertically */
+    cursor: pointer;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .remember-me input {
+    margin: 0;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #003d82;
+  }

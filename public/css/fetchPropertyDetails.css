@@ -1,0 +1,9 @@
+/* fetchPropertyDetails.css */
+
+.label-container {
+    margin-bottom: 5px;
+    border: 1px solid #054d56; /* Set the border color */
+    border-radius: 8px; /* This will create rounded corners on the label container */
+    padding: 5px;
+    display: block;
+}
