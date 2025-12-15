@@ -1,5 +1,13 @@
 # Building Management Project (CEI_326 Project)
 
+---
+
+## Notice 
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|This project was originally developed and fully functional.                                                                                                                                   |
+|However, the current version in this repository may not work as expected, since it is not the complete/original version and some resources (like database or server) aren't the original ones.|
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
 ## Team E
 | Name                  | Stud.ID | Email                       |
 |-----------------------|---------|-----------------------------|
@@ -9,7 +17,7 @@
 | Andreas Christou      | 25101   | andc.christou@edu.cut.ac.cy |
 | Marios Christodoulidis| 14187   | mp.christodoulidis@edu.cut.ac.cy |
 
-### Setup
+### Setup(it was)
 First use Cisco Anyconnect VPN with a CUT account: 
 - Project url: [https://cei326-omada5.cut.ac.cy/](https://cei326-omada5.cut.ac.cy/)
 - Database: [https://websrv1.cut.ac.cy/phpmyadmin/](https://websrv1.cut.ac.cy/phpmyadmin/)
@@ -17,6 +25,9 @@ First use Cisco Anyconnect VPN with a CUT account:
 #### Users
 | Table         | Email                  | Password  |
 | ------------- | ---------------------- | --------- |
-| Admin         | admin@gmail.com        | admin123! |
-| Owner         | owner@gmail.com        | owner123! |
-| Tenant        | tenant@gmail.com       | tenant123!|
+| Admin         | test4@gmail.com        | 1234      |
+| Owner         | test2@gmail.com        | 1234      |
+| Tenant        | test3@gmail.com        | 1234      |
+
+
+
